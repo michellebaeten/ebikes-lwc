@@ -7,20 +7,18 @@ import PRODUCT_SELECTED_MESSAGE from '@salesforce/messageChannel/ProductSelected
 
 // getProducts() method in ProductController Apex class
 import getProducts from '@salesforce/apex/ProductController.getProducts';
-
+ 
 /**
  * Container component that loads and displays a list of Product__c records.
  */
 export default class ProductTileList extends LightningElement {
     /**
      * Whether to display the search bar.
-     * TODO - normalize value because it may come as a boolean, string or otherwise.
      */
     @api searchBarIsVisible = false;
 
     /**
      * Whether the product tiles are draggable.
-     * TODO - normalize value because it may come as a boolean, string or otherwise.
      */
     @api tilesAreDraggable = false;
 
