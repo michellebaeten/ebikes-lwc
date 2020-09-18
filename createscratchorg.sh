@@ -17,5 +17,5 @@ sfdx force:data:tree:import -p ./data/sample-data-plan.json
 sfdx force:mdapi:deploy -d mdapiDeploy/unpackaged -w 5
 #publish community
 sfdx force:community:publish -n E-Bikes
-#open community
+#open scratch org
 sfdx force:org:open
